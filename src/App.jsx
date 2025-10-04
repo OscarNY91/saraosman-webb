@@ -1,5 +1,5 @@
 import React from "react";
-import { Head } from "react-head";
+
 
 // Hemsida för "Sara Osman – Bygglovsritningar"
 // Byggd som en enda React-komponent för enkel publicering (t.ex. Netlify/Vercel)
