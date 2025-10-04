@@ -8,7 +8,6 @@ import React from "react";
 export default function App() {
   return (
    <>
-      <Head>
        
     <main className="min-h-screen bg-neutral-50 text-neutral-900">
       {/* Header / Nav */}
