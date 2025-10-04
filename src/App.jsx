@@ -282,6 +282,7 @@ export default function App() {
         <div className="text-center text-xs text-neutral-500 pb-8">© {new Date().getFullYear()} Sara Osman. Alla rättigheter förbehållna.</div>
       </footer>
     </main>
+	</>
   );
 }
 
