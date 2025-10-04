@@ -9,10 +9,7 @@ export default function App() {
   return (
    <>
       <Head>
-        <meta
-          name="google-site-verification"
-          content="dd259c008dda9607"
-        />
+       
     <main className="min-h-screen bg-neutral-50 text-neutral-900">
       {/* Header / Nav */}
       <header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
