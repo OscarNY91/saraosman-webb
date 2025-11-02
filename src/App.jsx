@@ -159,11 +159,11 @@ export default function App() {
 
       <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
         <img
-          src="/images/attefall-fasad.jpg"
-          alt="Attefall – fasadändring"
+          src="/Bilder/Attefall.png"
+          alt="Attefall"
           className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
         />
-        <figcaption className="p-4 text-sm text-neutral-700">Attefall – fasadändring</figcaption>
+        <figcaption className="p-4 text-sm text-neutral-700">Attefall</figcaption>
       </figure>
     </div>
   </div>
