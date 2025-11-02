@@ -138,7 +138,7 @@ export default function App() {
       <a href="#kontakt" className="text-sm underline">Visa fler & begär exempel</a>
     </div>
 
-    <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="<div className="w-full h-72 sm:h-80 lg:h-96 xl:h-[28rem]">
       <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
         <img
           src="/Bilder/Fasadritning.png"
