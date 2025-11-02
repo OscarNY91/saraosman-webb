@@ -130,23 +130,45 @@ export default function App() {
         </div>
       </section>
 
-      {/* Referenser / Galleri */}
-      <section id="referenser" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between gap-4">
-            <h2 className="text-3xl font-semibold">Referenser</h2>
-            <a href="#kontakt" className="text-sm underline">Visa fler & begär exempel</a>
-          </div>
-          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {["Villa – tillbyggnad", "Garage – nybyggnad", "Attefall – fasadändring"].map((name, i) => (
-              <figure key={i} className="rounded-2xl overflow-hidden border bg-neutral-100">
-                <div className="aspect-[4/3]" />
-                <figcaption className="p-4 text-sm text-neutral-700">{name}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+     {/* Referenser / Galleri */}
+<section id="referenser" className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-end justify-between gap-4">
+      <h2 className="text-3xl font-semibold">Referenser</h2>
+      <a href="#kontakt" className="text-sm underline">Visa fler & begär exempel</a>
+    </div>
+
+    <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
+        <img
+          src="/Bilder/Fasadritning.png"
+          alt="Fasadritning"
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+        />
+        <figcaption className="p-4 text-sm text-neutral-700">Fasadritning</figcaption>
+      </figure>
+
+      <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
+        <img
+          src="/images/garage-nybyggnad.jpg"
+          alt="Garage – nybyggnad"
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+        />
+        <figcaption className="p-4 text-sm text-neutral-700">Garage – nybyggnad</figcaption>
+      </figure>
+
+      <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
+        <img
+          src="/images/attefall-fasad.jpg"
+          alt="Attefall – fasadändring"
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+        />
+        <figcaption className="p-4 text-sm text-neutral-700">Attefall – fasadändring</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 
       {/* Priser */}
       <section id="priser" className="py-16 bg-neutral-50">
