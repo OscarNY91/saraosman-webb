@@ -152,6 +152,7 @@ export default function App() {
 
 
 
+
       <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
         <img
           src="/images/garage-nybyggnad.jpg"
