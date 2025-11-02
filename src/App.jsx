@@ -138,18 +138,18 @@ export default function App() {
       <a href="#kontakt" className="text-sm underline">Visa fler & begär exempel</a>
     </div>
 
-   <div className="w-full h-72 sm:h-80 lg:h-96 xl:h-[28rem]">
-  <figure className="rounded-2xl overflow-hidden border bg-neutral-50 flex items-center justify-center">
+  <div className="rounded-2xl border bg-neutral-50 p-4 flex flex-col items-center justify-center hover:shadow-md transition">
+  <div className="w-full h-72 sm:h-80 lg:h-96 xl:h-[28rem] flex items-center justify-center bg-white rounded-xl">
     <img
       src="/Bilder/Fasadritning.png"
       alt="Fasadritning"
-      className="w-full h-full object-contain bg-white p-2 hover:scale-[1.02] transition-transform duration-300"
+      className="max-h-full max-w-full object-contain"
+      loading="lazy"
     />
-    <figcaption className="p-4 text-sm text-neutral-700 text-center">
-      Fasadritning
-    </figcaption>
-  </figure>
+  </div>
+  <figcaption className="mt-4 text-sm text-neutral-700 text-center">Fasadritning</figcaption>
 </div>
+
 
 
       <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
