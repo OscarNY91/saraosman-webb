@@ -99,8 +99,8 @@ export default function App() {
           {/* Bild 2 */}
           <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
             <img
-              src="/Bilder/GarageNyb.png"      // ändra filnamn om det heter något annat
-              alt="Garage – nybyggnad"
+              src="/Bilder/Attefall.png"      // ändra filnamn om det heter något annat
+              alt="Attefall"
               className="w-full h-64 sm:h-72 lg:h-80 object-cover"
             />
             <figcaption className="p-3 text-sm text-neutral-700 text-center">
