@@ -35,38 +35,87 @@ export default function App() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-100 to-white" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-              Bygglovsritningar som blir <span className="underline decoration-8 decoration-amber-300">godkända</span>
-            </h1>
-            <p className="mt-5 text-lg text-neutral-600 max-w-prose">
-              Jag hjälper privatpersoner och företag med kompletta bygglovsritningar för nybyggnad, tillbyggnad och ombyggnad – från första skiss till färdiga handlingar enligt kommunens krav.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#kontakt" className="rounded-2xl bg-black text-white px-6 py-3 font-medium hover:opacity-90">Få offert inom 24h</a>
-              <a href="#tjanster" className="rounded-2xl border px-6 py-3 font-medium hover:shadow">Se tjänster</a>
-            </div>
-            <div className="mt-6 flex items-center gap-6 text-sm text-neutral-600">
-              <div className="flex items-center gap-2"><span className="i-lucide-check-circle"/>Fast pris</div>
-              <div className="flex items-center gap-2"><span className="i-lucide-check-circle"/>Snabb leverans</div>
-              <div className="flex items-center gap-2"><span className="i-lucide-check-circle"/>Personlig kontakt</div>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="aspect-[4/3] w-full rounded-3xl bg-white shadow-xl ring-1 ring-black/5 p-4 grid place-items-center">
-              <div className="grid grid-cols-3 gap-2 w-full">
-                {Array.from({ length: 9 }).map((_, i) => (
-                  <div key={i} className="h-24 rounded-xl bg-neutral-100 border"/>
-                ))}
-              </div>
-            </div>
-            <p className="text-xs text-neutral-500 mt-2 text-center">Exempelrutor för ritningar/planer (ersätt med riktiga referenser).</p>
-          </div>
+     <section id="top" className="relative overflow-hidden">
+  <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-100 to-white" />
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+        Bygglovsritningar som blir{" "}
+        <span className="underline decoration-8 decoration-amber-300">
+          godkända
+        </span>
+      </h1>
+      <p className="mt-5 text-lg text-neutral-600 max-w-prose">
+        Jag hjälper privatpersoner och företag med kompletta bygglovsritningar
+        för nybyggnad, tillbyggnad och ombyggnad – från första skiss till
+        färdiga handlingar enligt kommunens krav.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href="#kontakt"
+          className="rounded-2xl bg-black text-white px-6 py-3 font-medium hover:opacity-90"
+        >
+          Få offert inom 24h
+        </a>
+        <a
+          href="#tjanster"
+          className="rounded-2xl border px-6 py-3 font-medium hover:shadow"
+        >
+          Se tjänster
+        </a>
+      </div>
+      <div className="mt-6 flex items-center gap-6 text-sm text-neutral-600">
+        <div className="flex items-center gap-2">
+          <span className="i-lucide-check-circle" />
+          Fast pris
         </div>
-      </section>
+        <div className="flex items-center gap-2">
+          <span className="i-lucide-check-circle" />
+          Snabb leverans
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="i-lucide-check-circle" />
+          Personlig kontakt
+        </div>
+      </div>
+    </div>
+
+    {/* Högersida med två exempelbilder */}
+    <div className="relative">
+      <div className="w-full rounded-3xl bg-white shadow-xl ring-1 ring-black/5 p-4 grid place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          {/* Bild 1 */}
+          <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
+            <img
+              src="/Bilder/Fasadritning.png"   // ändra filnamn om det heter något annat
+              alt="Fasadritning"
+              className="w-full h-64 sm:h-72 lg:h-80 object-cover"
+            />
+            <figcaption className="p-3 text-sm text-neutral-700 text-center">
+              Fasadritning
+            </figcaption>
+          </figure>
+
+          {/* Bild 2 */}
+          <figure className="rounded-2xl overflow-hidden border bg-neutral-100">
+            <img
+              src="/Bilder/GarageNyb.png"      // ändra filnamn om det heter något annat
+              alt="Garage – nybyggnad"
+              className="w-full h-64 sm:h-72 lg:h-80 object-cover"
+            />
+            <figcaption className="p-3 text-sm text-neutral-700 text-center">
+              Garage – nybyggnad
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <p className="text-xs text-neutral-500 mt-2 text-center">
+        Exempel på ritningar/visualiseringar.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Tjänster */}
       <section id="tjanster" className="py-16 bg-white">
